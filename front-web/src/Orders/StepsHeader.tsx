@@ -1,4 +1,4 @@
-/**Navbar da Página de pedidos */
+/**Navbar da Página de pedidos(Cabeçalho) */
 
 function StepsHeader() {
     return(
