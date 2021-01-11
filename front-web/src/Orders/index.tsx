@@ -1,18 +1,15 @@
-
-/**useEffect acessa o tempo de vida útil dos componentes */
-
+/**useEffect acessa o tempo de vida útil dos componentes Index de Pedidos. */
 import './styles.css';
-import { toast, Toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
 import { fetchProducts, saveOrder } from '../api';
 import ProductsList from './ProductsList';
 import StepsHeader from './StepsHeader';
-import { OrderLocationData, Product, OrderPayload } from './types';
+import { OrderLocationData, Product } from './types';
 import OrderLocation from './OrderLocation';
 import OrderSummary from './OrderSummary';
 import Footer from '../Footer';
 import { checkIsSelected } from './helpers';
-
 
 function Orders() {
 
@@ -23,27 +20,27 @@ function Orders() {
   const totalPrice = selectedProducts.reduce((sum, item) => {
     return sum + item.price;
   }, 0);
-
   useEffect(() => {
     fetchProducts()
       .then(response => setProducts(response.data))
-      .catch(() => { toast.warning('Erro ao listar pedido');})},[]);
+      .catch(() => { toast.warning('Erro ao listar pedido'); })
+  }, []);
   //Função do Click em um Card que verifica se o card ja foi selecionado ou não
   //Pelo menos um Item.
-  const handleSelectProduct = (product: Product) => {
-    const isAlreadySelected = checkIsSelected(selectedProducts, product);
+  const handleSelectProduct = (products: Product) => {
+    const isAlreadySelected = checkIsSelected(selectedProducts, products);
 
     if (isAlreadySelected) {
-      const selected = selectedProducts.filter(item => item.id !== product.id);
+      const selected = selectedProducts.filter(item => item.id !== products.id);
       setSelectedProducts(selected);
     } else {
-      setSelectedProducts(previous => [...previous, product]);
+      setSelectedProducts(previous => [...previous, products]);
     }
   }
 
-    const handleSubmit = () => {
-    const productsIds = selectedProducts.map (({id}) => ({id}));
-    const payload ={...orderLocation!, products: productsIds};
+  const handleSubmit = () => {
+    const productsIds = selectedProducts.map(({ id }) => ({ id }));
+    const payload = { ...orderLocation!, products: productsIds };
 
     /*function App(){
       const notify = () => toast("Wow so easy !");
@@ -56,7 +53,7 @@ function Orders() {
       );
     }*/
 
-    saveOrder (payload).then((response) => {
+    saveOrder(payload).then((response) => {
       toast.error(`Pedido enviado com sucesso! Nº ${response.data.id}`);
       setSelectedProducts([]);
     })
@@ -64,7 +61,6 @@ function Orders() {
         toast.warning('Erro ao enviar pedido');
       })
   }
-  
 
   return (
     <>
@@ -75,8 +71,8 @@ function Orders() {
           onSelectProduct={handleSelectProduct}
           selectedProducts={selectedProducts} />
         <OrderLocation onChangeLocation={location => setOrderLocation(location)} />
-        <OrderSummary amount={selectedProducts.length} totalPrice={totalPrice} 
-        onSubmit= {handleSubmit} />
+        <OrderSummary amount={selectedProducts.length} totalPrice={totalPrice}
+          onSubmit={handleSubmit} />
       </div>
       <Footer />
     </>
