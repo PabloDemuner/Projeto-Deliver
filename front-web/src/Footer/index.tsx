@@ -3,21 +3,22 @@
 import './styles.css';
 import {ReactComponent as YouTubeIcon} from './youtube.svg';
 import {ReactComponent as LinkedInIcon} from './linkedin.svg';
-import {ReactComponent as InstagramIcon} from './instagram.svg';
+//import {ReactComponent as InstagramIcon} from './instagram.svg';
+import {ReactComponent as FacebookIcon} from './Facebook.svg';
 
 function Footer() {
     return(
         <footer className="main-footer">
-       App desenvolvido durante a 2ª ed. do evento Semana DevSuperior
+       Siga-nos em nossas redes sociais.
        
-         <a href="http://" target= "new">
+         <a href="https://www.youtube.com/results?search_query=dev+superior" target= "new">
                 <YouTubeIcon/>
              </a>
-             <a href="http://" target= "new">
+             <a href="https://www.linkedin.com/in/pablo-diego-demuner-costa-31695b1b7/" target= "new">
                 <LinkedInIcon/>
              </a>   
-             <a href="http://" target= "new">
-                <InstagramIcon/>
+             <a href="https://www.facebook.com/pablodiego.demunercosta" target= "new">
+                <FacebookIcon/>
              </a>
             
         </footer>

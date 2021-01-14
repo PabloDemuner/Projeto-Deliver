@@ -112,10 +112,20 @@ public class Order implements Serializable {
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
+	
+	//Soma dos produtos escolhidos
+		public Double getTotal() {
+			double soma = 0.0;
+			for (Product p : products) {
+				soma += p.getPrice();
+			}
+			return soma;
+		}
 
 	public Set<Product> getProducts() {
 		return products;
 	}
+	
 
 	@Override
 	public int hashCode() {
