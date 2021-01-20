@@ -37,7 +37,7 @@ A aplicação consiste em um sistema de pedidos de Pizza Delivery, onde voce efe
 - Front End Web: Netlify
 - Banco de Dados: PostgreSQL
 
-#Como Executar o projeto
+## Como Executar o projeto
 
 ## Back End
 Pré-requisitos: Java 11
@@ -69,7 +69,7 @@ yarn install
 yarn start
 ```
 
-# Autor
+## Autor
 
 Pablo Diego Demuner Costa
 
