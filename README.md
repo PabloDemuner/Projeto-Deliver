@@ -5,11 +5,11 @@
 
 https://dmsdelivery.netlify.app
 
-O projeto DS Deliver é uma aplicação Full Stack WEB construida com meu conhecimento de Desenvolvedor Java BackEnd,
+O projeto DS Deliver é uma aplicação Full Stack WEB construída com meu conhecimento de Desenvolvedor Java BackEnd,
 juntamente com uma oportunidade que tive de aprendizado em FrontEnd durante a 2ª edição da **Semana DevSuperior** (#SDS2), evento organizado pela [DevSuperior]
 (https://devsuperior.com.br/  "Site da DevSuperior).
 
-A aplicação consiste em um sistema de pedidos de Pizza Delivery, onde voce efetua o seu pedido e marca a localização para entrega.
+A aplicação consiste em um sistema de pedidos de Pizza Delivery, onde você efetua o seu pedido e marca a localização de preferência para entrega.
 
 ## layout WEB
 
