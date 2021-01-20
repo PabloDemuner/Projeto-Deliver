@@ -31,7 +31,7 @@ A aplicação consiste em um sistema de pedidos de Pizza Delivery, onde voce efe
 
 - HTML/CSS/JS/TypeScript
 
-Implantação em produção
+## Implantação em produção
 
 - Back End: Heroku
 - Front End Web: Netlify
