@@ -1,4 +1,4 @@
-# Projeto-Deliver
+# Projeto-Delivery
 [![NPM](https://img.shields.io/github/issues/PabloDemuner/Projeto-Deliver)](https://github.com/PabloDemuner/Projeto-Deliver/blob/main/LICENSE)
 
 # Sobre o projeto
