@@ -5,7 +5,7 @@
 
 https://dmsdelivery.netlify.app
 
-O projeto DS Deliver é uma aplicação Full Stack WEB construída com meu conhecimento de Desenvolvedor Java BackEnd,
+O projeto DS Delivery é uma aplicação Full Stack WEB construída com meu conhecimento de Desenvolvedor Java BackEnd,
 juntamente com uma oportunidade que tive de aprendizado em FrontEnd durante a 2ª edição da **Semana DevSuperior** (#SDS2), evento organizado pela [DevSuperior]
 (https://devsuperior.com.br/  "Site da DevSuperior").
 
