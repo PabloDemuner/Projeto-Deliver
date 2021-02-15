@@ -23,13 +23,17 @@ A aplicação consiste em um sistema de pedidos de Pizza Delivery, onde você ef
 ## Back End
 
 - Java
-- Spring Boot
-- JPA/Hibernate
+- SpringBoot
+- JPA
+- Hibernate
 - Maven
 
 ## Front End
 
-- HTML/CSS/JS/TypeScript
+- HTML
+- CSS
+- JavaScript
+- TypeScript
 
 ## Implantação em produção
 
